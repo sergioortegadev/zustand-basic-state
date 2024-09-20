@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .container {
+    @apply flex flex-col items-center justify-around h-svh py-36;
+  }
+  h1 {
+    @apply text-4xl font-bold;
+  }
+  .logo {
+    filter: drop-shadow(7px 5px 6px #90906080);
+  }
+  .logo:hover {
+    filter: drop-shadow(12px 10px 10px #909060);
+  }
+  .beerlogo {
+    @apply w-24 h-24;
+  }
+  .card {
+    @apply bg-white dark:bg-gray-700 shadow-md rounded-lg p-6 font-semibold gap-8 flex flex-col items-center justify-between w-80 h-96 mt-12;
+    h3 {
+      @apply bg-transparent border-2 border-gray-400 dark:text-white font-bold py-2 px-4 rounded-xl w-fit text-3xl;
+    }
+
+    .btns {
+      @apply flex gap-4;
+    }
+    button {
+      @apply bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-3 rounded-2xl w-fit text-xl w-20;
+    }
+
+    .letsgo {
+      @apply text-xl;
+    }
+  }
+
+  html {
+    @apply flex flex-col items-center justify-center text-center bg-gray-100 text-gray-800 dark:bg-gray-800 dark:text-gray-300;
+  }
+}
